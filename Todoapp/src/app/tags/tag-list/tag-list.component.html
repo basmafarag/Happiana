@@ -1,0 +1,65 @@
+ <h6 class="text-center">My List</h6>
+ <table class="table table-sm table-hover">
+   <tr *ngFor="let OneTag of tagList">
+    <td><span class="hover-cursor" [class.text-success]="OneTag.isChecked" (click)="alterCheck(OneTag.$key,OneTag.isChecked)">          
+        <i class="fa fa-lg" [ngClass]="OneTag.isChecked?'fa-check-circle-o':'fa-circle-thin'"></i>
+    </span>
+      </td> 
+    <td> {{OneTag.Subject}}</td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td><td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td><td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td> </td>
+     <td>
+       <a class="btn"(click)="onEdit(OneTag)">
+        <i class="fa fa-pencil-square-o"></i>
+        </a>
+        <a class="btn"(click)="onDelete(OneTag.$key)">
+        <i class="fa fa-trash-o" style="color:firebrick"></i>
+        </a>
+          
+     </td>     
+    </tr>
+
+ </table>
